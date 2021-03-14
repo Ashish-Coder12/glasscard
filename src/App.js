@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import Video from "./video-1.mp4";
+import { SiMastercard } from 'react-icons/si';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <video className='Video' src={Video} alt='Video here' autoPlay muted loop/>
+      <div className='container'>
+        <div className='Card'>
+          <div className='top'>
+            <h1>VISA</h1>
+            <p><SiMastercard/></p>
+          </div>
+          <h2>4530 2894 8483 8402</h2>
+          <div className='down'>
+          <h1>Ashish Garg</h1>
+          <p> 05/27 </p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
